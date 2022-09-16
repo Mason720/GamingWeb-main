@@ -14,7 +14,7 @@
   <nav id="main">
     <ul>
       <li class="logo"><a href="#">Welcome.</a></li>
-      <li><a href="./index-FINISHED.html">Home</a></li>
+      <li><a href="./index.html">Home</a></li>
       <li><a href="./TodoList/index.html">Todo List</a></li>
       <li><a href="./鍵盤音樂遊戲/index-FINISHED.html">Music Game</a></li>
       <li><a href="./SimonGame/index.html">Simon GAME</a></li>
@@ -37,26 +37,6 @@
   <div class="footer">
     &copy; copyright 2022 by Mason
   </div>
-
-  <script>
-    // Not a ton of code, but hard to
-    const nav = document.querySelector('#main'); //選擇選單
-    let topOfNav = nav.offsetTop; //選單的最頂部
-
-    function fixNav() {
-      if (window.scrollY >= topOfNav) {
-        document.body.style.paddingTop = nav.offsetHeight + 'px';
-        document.body.classList.add('fixed-nav'); //滑到超過選單頂部後，新增一個屬性到body，再到CSS設定相關
-      } else {
-        document.body.classList.remove('fixed-nav');
-        document.body.style.paddingTop = 0;
-      }
-    }
-
-    window.addEventListener('scroll', fixNav);
-
-  </script>
-
-
 </body>
+<script src="./css/scipt.js"></script>
 </html>
